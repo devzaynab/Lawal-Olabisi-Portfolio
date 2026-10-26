@@ -1,0 +1,24 @@
+.page-section {
+  scroll-margin-top: 88px;
+}
+
+.section-copy,
+.section-supporting-text,
+.timeline-content p,
+.mindset-card p,
+.contact-item small,
+.project-meta p,
+.footer-links a,
+.footer-note,
+.copyright {
+  color: #aaa5b6;
+}
+
+.section-copy,
+.section-supporting-text,
+.timeline-content p,
+.project-meta p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}

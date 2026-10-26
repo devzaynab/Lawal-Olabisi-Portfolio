@@ -1,0 +1,67 @@
+.mindset-intro {
+  margin: 0;
+  color: #aaa5b6;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}
+
+.mindset-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.mindset-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem 1rem;
+  border: 1px solid #393541;
+  border-radius: 16px;
+  background: rgba(23, 21, 29, 0.72);
+}
+
+.mindset-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mindset-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(185, 160, 245, 0.1);
+  border: 1px solid rgba(185, 160, 245, 0.3);
+  color: #b9a0f5;
+}
+
+.mindset-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #f4f2f8;
+}
+
+.mindset-card p {
+  margin: 0;
+  color: #aaa5b6;
+  line-height: 1.7;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 900px) {
+  .mindset-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .mindset-grid {
+    grid-template-columns: 1fr;
+  }
+}

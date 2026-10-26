@@ -1,0 +1,155 @@
+.hero-section {
+  padding: 104px 0 88px;
+  border: 0;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.hero-kicker {
+  margin: 0 0 0.35rem;
+  color: #aaa5b6;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  color: #f4f2f8;
+}
+
+.accent-text {
+  color: #b9a0f5;
+}
+
+.typing-block {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  min-height: 2.25rem;
+}
+
+.typing-label {
+  display: none;
+}
+
+.typing-text {
+  min-width: 11ch;
+  color: #b9a0f5;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.08em;
+  height: 1em;
+  background: #b9a0f5;
+  margin-left: 0.08em;
+  animation: blink 0.9s steps(1) infinite;
+  vertical-align: -0.06em;
+}
+
+.hero-intro {
+  max-width: 660px;
+  margin-top: 1.5rem;
+  color: #aaa5b6;
+  line-height: 1.7;
+  font-size: 1.12rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 44px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #393541;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.primary-button {
+  background: #b9a0f5;
+  border-color: #b9a0f5;
+  color: #17131f;
+}
+
+.secondary-button {
+  background: transparent;
+  color: #f4f2f8;
+}
+
+.primary-button:hover,
+.primary-button:focus-visible,
+.secondary-button:hover,
+.secondary-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(185, 160, 245, 0.65);
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 4.2rem 0 3.5rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .hero-copy h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
